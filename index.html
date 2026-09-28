@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#0f172a" />
-  <title>Govt College of Multan | Undergraduate Admissions 2026–27</title>
+  <title>Govt College of Multan | Admissions, Eligibility & Fee Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
   <!-- Top Announcement Banner -->
   <div class="announcement-bar">
     <div class="container announcement-inner">
-      <span class="badge-live">ADMISSIONS OPEN 2026–27</span>
-      <p><strong>Govt College of Multan</strong> — Undergraduate applications for <strong>B.Tech, B.Sc, B.Com &amp; B.A</strong> are now open. <strong>Minimum 60.0% aggregate marks</strong> in HSSC / 12th required.</p>
-      <a href="#admission-form-section" class="announcement-link">Apply Online &rarr;</a>
+      <span class="badge-live">ADMISSIONS 2026–27</span>
+      <p><strong>Govt College of Multan</strong> — Admissions open for <strong>Web Development, Graphic Design, AI Course &amp; Freelancing</strong>.</p>
+      <a href="#eligibility-checker-section" class="announcement-link">Check Eligibility &rarr;</a>
     </div>
   </div>
 
@@ -33,20 +33,26 @@
         </div>
         <div class="brand-text">
           <span class="brand-title">Govt College of Multan</span>
-          <span class="brand-subtitle">Premier Public Sector Institution • Multan, Punjab</span>
+          <span class="brand-subtitle">Admissions &amp; Skills Portal • Multan, Punjab</span>
         </div>
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="main-nav" aria-label="Primary Navigation">
-        <a href="#programs-section">UG Programs</a>
-        <a href="#eligibility-section">Eligibility Criteria (60%)</a>
+        <a href="#eligibility-checker-section">Eligibility Checker</a>
+        <a href="#fee-calculator-section">Fee Calculator</a>
+        <a href="#courses-section">Courses</a>
         <a href="#admission-form-section">Admission Form</a>
+        <a href="#faq-section">FAQ</a>
         <a href="#applications-section">Applications <span id="nav-app-count" class="count-pill">0</span></a>
       </nav>
 
       <div class="header-actions">
-        <a href="#eligibility-checker-card" class="btn btn-outline btn-sm desktop-only">Check Eligibility</a>
+        <!-- Extra Feature: Dark Mode Toggle -->
+        <button type="button" id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Theme">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+
         <a href="#admission-form-section" class="btn btn-primary btn-sm desktop-only">Apply Now</a>
         
         <!-- Mobile Menu Toggle Button -->
@@ -62,16 +68,24 @@
     <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
       <div class="mobile-nav-content">
         <nav class="mobile-nav-links" aria-label="Mobile Navigation">
-          <a href="#programs-section" class="mobile-nav-link">
-            <span>UG Programs</span>
+          <a href="#eligibility-checker-section" class="mobile-nav-link">
+            <span>Student Eligibility Checker</span>
             <span class="arrow">&rarr;</span>
           </a>
-          <a href="#eligibility-section" class="mobile-nav-link">
-            <span>Eligibility Criteria (60%)</span>
+          <a href="#fee-calculator-section" class="mobile-nav-link">
+            <span>Course Fee Calculator</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="#courses-section" class="mobile-nav-link">
+            <span>Available Courses</span>
             <span class="arrow">&rarr;</span>
           </a>
           <a href="#admission-form-section" class="mobile-nav-link">
-            <span>Admission Form</span>
+            <span>Admission Application Form</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="#faq-section" class="mobile-nav-link">
+            <span>Frequently Asked Questions</span>
             <span class="arrow">&rarr;</span>
           </a>
           <a href="#applications-section" class="mobile-nav-link">
@@ -80,7 +94,7 @@
           </a>
         </nav>
         <div class="mobile-nav-actions">
-          <a href="#eligibility-checker-card" class="btn btn-outline btn-block mobile-nav-close-trigger">Check Eligibility</a>
+          <a href="#eligibility-checker-section" class="btn btn-outline btn-block mobile-nav-close-trigger">Check Eligibility</a>
           <a href="#admission-form-section" class="btn btn-primary btn-block mobile-nav-close-trigger">Start Admission Application</a>
         </div>
       </div>
@@ -88,592 +102,616 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section with Campus Background Photography -->
     <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="eyebrow-tag">
-            <span class="dot"></span> Govt College of Multan • Official Admissions Portal
+            <span class="dot"></span> Govt College of Multan • Admissions 2026–27
           </div>
-          <h1>Shape Your Future with World-Class Undergraduate Programs</h1>
+          <h1>Build Future-Ready Skills with Top Industry Courses</h1>
           <p class="hero-lead">
-            Join a vibrant academic community across <strong>B.Tech, B.Sc, B.Com, and B.A</strong> streams. Transparent merit-based admissions with automatic eligibility verification and instant scholarship evaluation.
+            Explore cutting-edge professional courses in <strong>Web Development, Graphic Design, AI, and Freelancing</strong>. Check your eligibility instantly and calculate your course fee with duration discounts.
           </p>
 
           <div class="hero-cta-group">
-            <a href="#admission-form-section" class="btn btn-primary btn-lg">
-              Start Admission Application
+            <a href="#eligibility-checker-section" class="btn btn-primary btn-lg">
+              Check Admission Eligibility
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#eligibility-section" class="btn btn-secondary btn-lg">
-              View 60% Cutoff Policy
+            <a href="#fee-calculator-section" class="btn btn-secondary btn-lg">
+              Calculate Course Fee
             </a>
           </div>
 
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-value">4 Degrees</span>
-              <span class="stat-label">B.Tech • B.Sc • B.Com • B.A</span>
+              <span class="stat-value">70%+</span>
+              <span class="stat-label">Direct Admission</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-value">60.0%</span>
-              <span class="stat-label">Minimum Passing Cutoff</span>
+              <span class="stat-value">50–69%</span>
+              <span class="stat-label">Counselling Track</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-value">Up to 50%</span>
-              <span class="stat-label">Merit Tuition Scholarship</span>
+              <span class="stat-value">Up to 10%</span>
+              <span class="stat-label">Duration Discount</span>
             </div>
           </div>
         </div>
 
-        <!-- Quick Eligibility Calculator Card in Hero -->
-        <aside id="eligibility-checker-card" class="quick-checker-card" aria-labelledby="quick-checker-title">
+        <!-- Hero Quick Eligibility Card -->
+        <aside class="quick-checker-card" aria-labelledby="hero-checker-title">
           <div class="checker-header">
-            <span class="checker-badge">Instant Tool</span>
-            <h2 id="quick-checker-title">Marks Eligibility Calculator</h2>
-            <p>Verify if your 12th Standard / H.S.C marks meet our mandatory <strong>60% minimum admission cutoff</strong>.</p>
+            <span class="checker-badge">Live Calculator</span>
+            <h2 id="hero-checker-title">Quick Eligibility Check</h2>
+            <p>Enter your details to verify your admission eligibility instantly.</p>
           </div>
 
           <div class="checker-body">
-            <div class="input-row-2">
+            <div class="form-group mb-sm">
+              <label for="hero-student-name">Student Full Name</label>
+              <input type="text" id="hero-student-name" placeholder="e.g. Hamza Tariq" value="Hamza Tariq" />
+            </div>
+
+            <div class="input-row-2 mb-sm">
               <div class="form-group">
-                <label for="quick-obtained">Marks Obtained</label>
-                <input type="number" id="quick-obtained" min="0" max="1000" value="385" placeholder="e.g. 385" />
+                <label for="hero-student-marks">Marks / Percentage (%)</label>
+                <input type="number" id="hero-student-marks" min="0" max="100" value="78" placeholder="e.g. 78" />
               </div>
               <div class="form-group">
-                <label for="quick-max">Maximum Marks</label>
-                <input type="number" id="quick-max" min="1" max="1000" value="500" placeholder="e.g. 500" />
+                <label for="hero-student-course">Course</label>
+                <select id="hero-student-course">
+                  <option value="Web Development">Web Development</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="AI Course">AI Course</option>
+                  <option value="Freelancing">Freelancing</option>
+                </select>
               </div>
             </div>
 
             <div class="meter-wrapper">
               <div class="meter-labels">
-                <span>Calculated Aggregate: <strong id="quick-pct-display">77.00%</strong></span>
-                <span class="cutoff-marker-label">Min Cutoff: 60%</span>
+                <span>Result: <strong id="hero-pct-display">78%</strong></span>
+                <span class="cutoff-marker-label">Thresholds: 50% | 70%</span>
               </div>
               <div class="progress-track">
-                <div id="quick-progress-fill" class="progress-fill eligible" style="width: 77%;"></div>
-                <div class="cutoff-line" style="left: 60%;" title="60% Minimum Eligibility Cutoff"></div>
+                <div id="hero-progress-fill" class="progress-fill eligible" style="width: 78%;"></div>
+                <div class="cutoff-line line-50" style="left: 50%;" title="50% Cutoff"></div>
+                <div class="cutoff-line line-70" style="left: 70%;" title="70% Direct Admission"></div>
               </div>
             </div>
 
-            <div id="quick-result-box" class="eligibility-status-box status-eligible" aria-live="polite">
-              <div class="status-icon" id="quick-status-icon">✓</div>
+            <div id="hero-result-box" class="eligibility-status-box status-direct" aria-live="polite">
+              <div class="status-icon" id="hero-status-icon">✓</div>
               <div class="status-text">
-                <strong id="quick-status-title">Eligible for All UG Programs (77.0%)</strong>
-                <p id="quick-status-desc">You exceed the 60% cutoff and qualify for a 25% Distinction Merit Scholarship!</p>
+                <strong id="hero-status-title">Direct Admission (78%)</strong>
+                <p id="hero-status-desc">Congratulations! You qualify for direct admission into Web Development.</p>
               </div>
             </div>
 
-            <button type="button" id="quick-transfer-btn" class="btn btn-primary btn-block">
-              Use These Marks in Admission Form &darr;
-            </button>
+            <a href="#eligibility-checker-section" class="btn btn-primary btn-block">
+              Open Full Eligibility Checker &darr;
+            </a>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Undergraduate Programs Section -->
-    <section id="programs-section" class="section">
+    <!-- Campus Heritage Showcase Strip -->
+    <div class="container">
+      <div class="campus-showcase-card">
+        <img src="campus-hero.jpg" alt="Govt College of Multan Campus" class="campus-showcase-img" />
+        <div class="campus-showcase-info">
+          <span class="section-tag">Govt College of Multan • Est. 1920</span>
+          <h3>Premier Technical &amp; Academic Hub of South Punjab</h3>
+          <p>Providing high-demand IT training, state-of-the-art computer labs, certified instructors, and merit-based discount structures for deserving students.</p>
+          <div class="campus-badges">
+            <span class="campus-badge-item">🏛️ Historic Campus</span>
+            <span class="campus-badge-item">💻 High-Tech Labs</span>
+            <span class="campus-badge-item">🎯 70%+ Direct Admission</span>
+            <span class="campus-badge-item">💰 Up to 10% Fee Discount</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REQUIREMENT 1: Student Admission Eligibility Checker -->
+    <section id="eligibility-checker-section" class="section">
       <div class="container">
-        <!-- Campus Heritage Showcase Banner -->
-        <div class="campus-showcase-card" style="margin-bottom: 3rem;">
-          <img src="campus-hero.jpg" alt="Govt College of Multan Historic Main Clock Tower Campus" class="campus-showcase-img" />
-          <div class="campus-showcase-info">
-            <span class="section-tag" style="margin-bottom: 0.4rem;">Historic Main Campus • Multan</span>
-            <h3>Welcome to Govt College of Multan</h3>
-            <p>Renowned across South Punjab for academic excellence, state-of-the-art science &amp; computing laboratories, and merit-driven undergraduate education.</p>
-            <div class="campus-badges">
-              <span class="campus-badge-item">Historic Clock Tower Block</span>
-              <span class="campus-badge-item">HEC Recognized Degrees</span>
-              <span class="campus-badge-item">Merit Scholarships (75%+)</span>
-              <span class="campus-badge-item">Boys &amp; Girls Hostels</span>
+        <div class="section-header">
+          <span class="section-tag">Core Feature #1</span>
+          <h2>Student Admission Eligibility Checker</h2>
+          <p>Verify admission status based on your Academic Marks (%) according to official criteria.</p>
+        </div>
+
+        <div class="checker-container-card">
+          <div class="checker-form-grid">
+            <div class="checker-form-side">
+              <h3>Enter Student Details</h3>
+              <form id="standalone-checker-form" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="check-name">Student Full Name <span class="req">*</span></label>
+                  <input type="text" id="check-name" placeholder="Enter full name" value="Ayesha Fatima" required />
+                  <span class="input-hint" id="check-name-error">Please enter student name (at least 2 letters)</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="check-marks">Marks / Percentage (0 – 100%) <span class="req">*</span></label>
+                  <input type="number" id="check-marks" min="0" max="100" step="0.1" placeholder="e.g. 72" value="72" required />
+                  <span class="input-hint" id="check-marks-error">Please enter valid marks between 0 and 100</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="check-course">Desired Course <span class="req">*</span></label>
+                  <select id="check-course" required>
+                    <option value="Web Development">Web Development (Rs. 5,000/mo)</option>
+                    <option value="Graphic Design">Graphic Design (Rs. 4,000/mo)</option>
+                    <option value="AI Course">AI Course (Rs. 7,000/mo)</option>
+                    <option value="Freelancing">Freelancing (Rs. 3,500/mo)</option>
+                  </select>
+                </div>
+
+                <div class="button-group-row">
+                  <button type="button" id="evaluate-checker-btn" class="btn btn-primary btn-block">
+                    Evaluate Eligibility
+                  </button>
+                </div>
+              </form>
+
+              <!-- Criteria Reference Guide Box -->
+              <div class="criteria-guide-box">
+                <h4>Admission Criteria Rules:</h4>
+                <div class="criteria-rule-row rule-green">
+                  <strong>70%+</strong>
+                  <span>&rarr; Direct Admission</span>
+                </div>
+                <div class="criteria-rule-row rule-amber">
+                  <strong>50% – 69%</strong>
+                  <span>&rarr; Eligible, counselling recommended</span>
+                </div>
+                <div class="criteria-rule-row rule-red">
+                  <strong>Below 50%</strong>
+                  <span>&rarr; Contact admission counsellor</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Checker Result Card Output -->
+            <div class="checker-result-side">
+              <h3>Eligibility Evaluation Result</h3>
+              
+              <div id="checker-output-card" class="result-display-card result-direct">
+                <div class="result-badge-row">
+                  <span id="result-status-badge" class="badge-status badge-success">Direct Admission</span>
+                  <span id="result-score-pill" class="score-pill">Score: 72.0%</span>
+                </div>
+
+                <div class="result-details-box">
+                  <div class="detail-row">
+                    <span class="detail-label">Student Name:</span>
+                    <strong id="result-student-name" class="detail-val">Ayesha Fatima</strong>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Selected Course:</span>
+                    <strong id="result-course-name" class="detail-val">Web Development</strong>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Admission Category:</span>
+                    <strong id="result-category" class="detail-val text-success">Direct Merit Track</strong>
+                  </div>
+                </div>
+
+                <div class="progress-bar-container">
+                  <div class="progress-bar-labels">
+                    <span>0%</span>
+                    <span style="left: 50%; position: absolute; transform: translateX(-50%); font-weight: 700;">50%</span>
+                    <span style="left: 70%; position: absolute; transform: translateX(-50%); font-weight: 700;">70%</span>
+                    <span>100%</span>
+                  </div>
+                  <div class="eval-progress-track">
+                    <div id="eval-progress-bar" class="eval-progress-fill fill-green" style="width: 72%;"></div>
+                  </div>
+                </div>
+
+                <div id="result-advice-box" class="result-advice-alert alert-success">
+                  <p id="result-advice-text">
+                    🎉 <strong>Direct Admission Approved!</strong> Your score of <strong>72.0%</strong> exceeds the 70% direct cutoff. You can proceed directly to fee calculation and application submission.
+                  </p>
+                </div>
+
+                <div class="result-actions">
+                  <button type="button" id="copy-to-calculator-btn" class="btn btn-outline btn-block">
+                    Calculate Fee for this Course &rarr;
+                  </button>
+                  <button type="button" id="copy-to-form-btn" class="btn btn-primary btn-block">
+                    Proceed to Admission Form &rarr;
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- REQUIREMENT 2: Fee Calculator -->
+    <section id="fee-calculator-section" class="section section-alt">
+      <div class="container">
         <div class="section-header">
-          <span class="section-tag">Academic Programs</span>
-          <h2>Undergraduate Degree Programs (2026–27)</h2>
-          <p>All four undergraduate tracks require a minimum of <strong>60.0% aggregate marks</strong> in 10+2 / Higher Secondary examinations.</p>
+          <span class="section-tag">Core Feature #2</span>
+          <h2>Course Fee Calculator</h2>
+          <p>Calculate your exact course fee with multi-month duration discounts.</p>
+        </div>
+
+        <div class="fee-calculator-card">
+          <div class="fee-calc-grid">
+            <div class="fee-inputs-side">
+              <h3>Select Course &amp; Duration</h3>
+
+              <div class="form-group mb-md">
+                <label for="calc-course">Select Course <span class="req">*</span></label>
+                <select id="calc-course">
+                  <option value="Web Development" data-fee="5000">Web Development (Rs. 5,000 / month)</option>
+                  <option value="Graphic Design" data-fee="4000">Graphic Design (Rs. 4,000 / month)</option>
+                  <option value="AI Course" data-fee="7000">AI Course (Rs. 7,000 / month)</option>
+                  <option value="Freelancing" data-fee="3500">Freelancing (Rs. 3,500 / month)</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-md">
+                <label for="calc-duration">Select Duration</label>
+                <div class="duration-buttons-grid" id="duration-buttons">
+                  <button type="button" class="duration-btn" data-months="1">
+                    <span class="dur-months">1 Month</span>
+                    <span class="dur-disc">0% Off</span>
+                  </button>
+                  <button type="button" class="duration-btn active" data-months="3">
+                    <span class="dur-months">3 Months</span>
+                    <span class="dur-disc badge-save">5% Off</span>
+                  </button>
+                  <button type="button" class="duration-btn" data-months="6">
+                    <span class="dur-months">6 Months</span>
+                    <span class="dur-disc badge-save">10% Off</span>
+                  </button>
+                  <button type="button" class="duration-btn" data-months="12">
+                    <span class="dur-months">12 Months</span>
+                    <span class="dur-disc badge-save">10% Off</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="discount-policy-box">
+                <h4>Discount Policy:</h4>
+                <ul>
+                  <li><strong>3 Months:</strong> 5% discount applied on total fee</li>
+                  <li><strong>6+ Months:</strong> 10% discount applied on total fee</li>
+                  <li><strong>1-2 Months:</strong> Standard monthly fee</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Fee Calculation Live Breakdown (Original Fee -> Discount -> Final Fee) -->
+            <div class="fee-breakdown-side">
+              <h3>Fee Summary &amp; Savings</h3>
+
+              <div class="fee-display-card">
+                <div class="course-header-tag">
+                  <span id="calc-course-label">Web Development</span>
+                  <span id="calc-duration-label" class="duration-pill">3 Months Plan</span>
+                </div>
+
+                <div class="fee-math-table">
+                  <div class="math-row">
+                    <span class="math-label">Monthly Rate:</span>
+                    <span class="math-val" id="calc-monthly-rate">Rs. 5,000 / mo</span>
+                  </div>
+                  <div class="math-row">
+                    <span class="math-label">Original Fee (<span id="calc-months-count">3</span> × Rate):</span>
+                    <strong class="math-val" id="calc-original-fee">Rs. 15,000</strong>
+                  </div>
+                  <div class="math-row discount-math-row">
+                    <span class="math-label">Duration Discount (<span id="calc-discount-percent">5%</span>):</span>
+                    <strong class="math-val text-success" id="calc-discount-amount">- Rs. 750</strong>
+                  </div>
+                  <div class="math-row total-fee-row">
+                    <span class="math-label">Final Payable Fee:</span>
+                    <strong class="math-val highlight-final" id="calc-final-fee">Rs. 14,250</strong>
+                  </div>
+                  <div class="math-row sub-row">
+                    <span class="math-label">Effective Monthly Cost:</span>
+                    <span class="math-val" id="calc-effective-monthly">Rs. 4,750 / mo</span>
+                  </div>
+                </div>
+
+                <!-- Three Step Visual Chain: Original -> Discount -> Final Fee -->
+                <div class="fee-step-chain">
+                  <div class="chain-step">
+                    <span class="step-label">Original Fee</span>
+                    <strong id="chain-original">Rs. 15,000</strong>
+                  </div>
+                  <div class="chain-arrow">&rarr;</div>
+                  <div class="chain-step discount-step">
+                    <span class="step-label">Discount</span>
+                    <strong id="chain-discount">- Rs. 750 (5%)</strong>
+                  </div>
+                  <div class="chain-arrow">&rarr;</div>
+                  <div class="chain-step final-step">
+                    <span class="step-label">Final Fee</span>
+                    <strong id="chain-final">Rs. 14,250</strong>
+                  </div>
+                </div>
+
+                <button type="button" id="apply-with-fee-btn" class="btn btn-primary btn-block">
+                  Apply for this Course Plan &darr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Offered Section -->
+    <section id="courses-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Programs</span>
+          <h2>Featured Courses &amp; Monthly Fees</h2>
+          <p>Govt College of Multan offers practical, high-demand skills taught by certified industry veterans.</p>
         </div>
 
         <div class="programs-grid">
-          <!-- B.Tech -->
+          <!-- Web Development -->
           <article class="program-card">
             <div class="program-card-top">
-              <span class="program-code">B.Tech</span>
-              <span class="program-duration">4 Years • 8 Semesters</span>
+              <span class="program-code">WEB-101</span>
+              <span class="program-duration">3–6 Months</span>
             </div>
-            <h3>Bachelor of Technology</h3>
-            <p class="program-desc">Industry-aligned engineering curriculum with hands-on AI, Robotics, Cloud Computing, and Electronics labs.</p>
+            <h3>Web Development</h3>
+            <p class="program-desc">HTML5, CSS3, JavaScript ES6+, React, Node.js, and Full-Stack Project Building.</p>
             <div class="program-meta">
               <div class="meta-row">
-                <span>Eligibility Criterion:</span>
-                <strong class="cutoff-pill">Min. 60% Aggregate</strong>
+                <span>Monthly Fee:</span>
+                <strong>Rs. 5,000 / month</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Intake:</span>
-                <strong>240 Seats</strong>
+                <span>3-Month Package (5% Off):</span>
+                <strong class="text-success">Rs. 14,250</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Tuition Fee:</span>
-                <strong>$2,400 / yr</strong>
+                <span>6-Month Package (10% Off):</span>
+                <strong class="text-success">Rs. 27,000</strong>
               </div>
             </div>
-            <div class="specializations-list">
-              <span>Specializations:</span>
-              <div class="tags">
-                <span>Computer Science &amp; Engg</span>
-                <span>AI &amp; Data Science</span>
-                <span>Electronics &amp; Comm.</span>
-                <span>Mechanical Engg</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-outline btn-block select-program-btn" data-program="B.Tech">
-              Select B.Tech &amp; Apply
+            <button type="button" class="btn btn-outline btn-block select-course-action" data-course="Web Development" data-fee="5000">
+              Select &amp; Calculate Fee
             </button>
           </article>
 
-          <!-- B.Sc -->
+          <!-- Graphic Design -->
           <article class="program-card">
             <div class="program-card-top">
-              <span class="program-code">B.Sc</span>
-              <span class="program-duration">3 Years • 6 Semesters</span>
+              <span class="program-code">GD-102</span>
+              <span class="program-duration">3–6 Months</span>
             </div>
-            <h3>Bachelor of Science (Honors)</h3>
-            <p class="program-desc">Research-driven pure and applied science programs preparing students for R&amp;D, data analytics, and biotechnology careers.</p>
+            <h3>Graphic Design</h3>
+            <p class="program-desc">Adobe Photoshop, Illustrator, UI/UX in Figma, Branding, Social Media Design &amp; Typography.</p>
             <div class="program-meta">
               <div class="meta-row">
-                <span>Eligibility Criterion:</span>
-                <strong class="cutoff-pill">Min. 60% Aggregate</strong>
+                <span>Monthly Fee:</span>
+                <strong>Rs. 4,000 / month</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Intake:</span>
-                <strong>180 Seats</strong>
+                <span>3-Month Package (5% Off):</span>
+                <strong class="text-success">Rs. 11,400</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Tuition Fee:</span>
-                <strong>$1,500 / yr</strong>
+                <span>6-Month Package (10% Off):</span>
+                <strong class="text-success">Rs. 21,600</strong>
               </div>
             </div>
-            <div class="specializations-list">
-              <span>Specializations:</span>
-              <div class="tags">
-                <span>Computer Science</span>
-                <span>Biotechnology</span>
-                <span>Physics &amp; Astrophysics</span>
-                <span>Mathematics &amp; Stats</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-outline btn-block select-program-btn" data-program="B.Sc">
-              Select B.Sc &amp; Apply
+            <button type="button" class="btn btn-outline btn-block select-course-action" data-course="Graphic Design" data-fee="4000">
+              Select &amp; Calculate Fee
             </button>
           </article>
 
-          <!-- B.Com -->
+          <!-- AI Course -->
           <article class="program-card">
             <div class="program-card-top">
-              <span class="program-code">B.Com</span>
-              <span class="program-duration">3 Years • 6 Semesters</span>
+              <span class="program-code">AI-103</span>
+              <span class="program-duration">3–6 Months</span>
             </div>
-            <h3>Bachelor of Commerce</h3>
-            <p class="program-desc">Comprehensive commerce, corporate accounting, financial markets, and taxation training with global certification prep.</p>
+            <h3>AI Course</h3>
+            <p class="program-desc">Python Programming, Machine Learning, Generative AI, Prompt Engineering &amp; Data Analysis.</p>
             <div class="program-meta">
               <div class="meta-row">
-                <span>Eligibility Criterion:</span>
-                <strong class="cutoff-pill">Min. 60% Aggregate</strong>
+                <span>Monthly Fee:</span>
+                <strong>Rs. 7,000 / month</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Intake:</span>
-                <strong>180 Seats</strong>
+                <span>3-Month Package (5% Off):</span>
+                <strong class="text-success">Rs. 19,950</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Tuition Fee:</span>
-                <strong>$1,350 / yr</strong>
+                <span>6-Month Package (10% Off):</span>
+                <strong class="text-success">Rs. 37,800</strong>
               </div>
             </div>
-            <div class="specializations-list">
-              <span>Specializations:</span>
-              <div class="tags">
-                <span>Accounting &amp; Finance</span>
-                <span>Banking &amp; FinTech</span>
-                <span>Corporate Secretaryship</span>
-                <span>International Business</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-outline btn-block select-program-btn" data-program="B.Com">
-              Select B.Com &amp; Apply
+            <button type="button" class="btn btn-outline btn-block select-course-action" data-course="AI Course" data-fee="7000">
+              Select &amp; Calculate Fee
             </button>
           </article>
 
-          <!-- B.A -->
+          <!-- Freelancing -->
           <article class="program-card">
             <div class="program-card-top">
-              <span class="program-code">B.A</span>
-              <span class="program-duration">3 Years • 6 Semesters</span>
+              <span class="program-code">FREE-104</span>
+              <span class="program-duration">1–3 Months</span>
             </div>
-            <h3>Bachelor of Arts (Honors)</h3>
-            <p class="program-desc">Interdisciplinary liberal arts, economics, psychology, and public policy education designed for critical thinkers and leaders.</p>
+            <h3>Freelancing</h3>
+            <p class="program-desc">Upwork &amp; Fiverr Mastery, Proposal Writing, Client Communication, Portfolio Setup &amp; Payment methods.</p>
             <div class="program-meta">
               <div class="meta-row">
-                <span>Eligibility Criterion:</span>
-                <strong class="cutoff-pill">Min. 60% Aggregate</strong>
+                <span>Monthly Fee:</span>
+                <strong>Rs. 3,500 / month</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Intake:</span>
-                <strong>150 Seats</strong>
+                <span>3-Month Package (5% Off):</span>
+                <strong class="text-success">Rs. 9,975</strong>
               </div>
               <div class="meta-row">
-                <span>Annual Tuition Fee:</span>
-                <strong>$1,200 / yr</strong>
+                <span>6-Month Package (10% Off):</span>
+                <strong class="text-success">Rs. 18,900</strong>
               </div>
             </div>
-            <div class="specializations-list">
-              <span>Specializations:</span>
-              <div class="tags">
-                <span>Economics &amp; Policy</span>
-                <span>Clinical Psychology</span>
-                <span>English &amp; Journalism</span>
-                <span>Political Science</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-outline btn-block select-program-btn" data-program="B.A">
-              Select B.A &amp; Apply
+            <button type="button" class="btn btn-outline btn-block select-course-action" data-course="Freelancing" data-fee="3500">
+              Select &amp; Calculate Fee
             </button>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Marks Eligibility Criteria & Scholarship Tiers Section -->
-    <section id="eligibility-section" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Admission Policy</span>
-          <h2>Marks Eligibility Criteria &amp; Merit Tiers</h2>
-          <p>Our online portal enforces a strict single minimum passing cutoff of <strong>60.0% aggregate marks</strong> in your qualifying 12th Standard / Senior Secondary examination.</p>
-        </div>
-
-        <div class="criteria-grid">
-          <div class="criteria-tier tier-ineligible">
-            <div class="tier-header">
-              <span class="tier-range">Below 60.0%</span>
-              <span class="tier-badge badge-danger">Not Eligible</span>
-            </div>
-            <h3>Below Minimum Cutoff</h3>
-            <p>Candidates scoring below <strong>60.0% aggregate</strong> do not meet the minimum eligibility criteria. The online admission form automatically locks submission when aggregate marks are below 60%.</p>
-            <ul class="tier-list">
-              <li>Form submission is blocked automatically</li>
-              <li>Candidate may apply after improvement exam results</li>
-            </ul>
-          </div>
-
-          <div class="criteria-tier tier-eligible">
-            <div class="tier-header">
-              <span class="tier-range">60.0% – 74.9%</span>
-              <span class="tier-badge badge-success">Eligible • General Merit</span>
-            </div>
-            <h3>Standard Admission Eligibility</h3>
-            <p>Meets the mandatory <strong>60% minimum passing cutoff</strong>. Unlocks admission application for all undergraduate programs (B.Tech, B.Sc, B.Com, B.A).</p>
-            <ul class="tier-list">
-              <li>Full eligibility across all 4 UG degrees</li>
-              <li>Eligible for standard counseling &amp; hostel allotment</li>
-            </ul>
-          </div>
-
-          <div class="criteria-tier tier-distinction">
-            <div class="tier-header">
-              <span class="tier-range">75.0% – 89.9%</span>
-              <span class="tier-badge badge-indigo">Eligible • 25% Scholarship</span>
-            </div>
-            <h3>First Class with Distinction</h3>
-            <p>Exceeds eligibility cutoff with distinction. Automatically qualifies for the <strong>Dean's Merit Scholarship (25% tuition fee waiver)</strong> in the first academic year.</p>
-            <ul class="tier-list">
-              <li>Priority specialization allocation</li>
-              <li>25% automatic reduction on annual tuition</li>
-            </ul>
-          </div>
-
-          <div class="criteria-tier tier-honors">
-            <div class="tier-header">
-              <span class="tier-range">90.0% – 100%</span>
-              <span class="tier-badge badge-gold">Eligible • 50% Scholarship</span>
-            </div>
-            <h3>Chancellor's Honors List</h3>
-            <p>Outstanding academic merit. Qualifies for direct spot admission and a <strong>50% Chancellor's Scholarship</strong> renewable every year.</p>
-            <ul class="tier-list">
-              <li>Direct admission without waitlisting</li>
-              <li>50% tuition waiver + research mentorship grant</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Admission Form Section -->
-    <section id="admission-form-section" class="section">
+    <!-- Complete Admission Application Form with Form Validation -->
+    <section id="admission-form-section" class="section section-alt">
       <div class="container">
         <div class="form-layout">
           <div class="form-main-card">
             <div class="form-card-header">
               <div>
-                <span class="section-tag">Academic Year 2026–27</span>
-                <h2>Undergraduate Admission Application Form</h2>
-                <p>Complete all required fields. Your 10+2 marks will be verified in real time against the <strong>60.0% minimum eligibility criteria</strong>.</p>
+                <span class="section-tag">Academic Session 2026–27</span>
+                <h2>Official Admission Application Form</h2>
+                <p>Complete all required fields below. Your marks and fees will be automatically validated.</p>
               </div>
 
-              <!-- Quick Demo Fillers for Instant Testing -->
+              <!-- Quick Presets -->
               <div class="demo-presets">
                 <span class="preset-label">Quick Test Presets:</span>
                 <div class="preset-buttons">
-                  <button type="button" class="btn-chip chip-pass" id="preset-eligible">
-                    Fill Eligible (82%)
+                  <button type="button" class="btn-chip chip-pass" id="preset-direct">
+                    Direct (82% - AI)
                   </button>
-                  <button type="button" class="btn-chip chip-gold" id="preset-scholar">
-                    Fill Honors (93%)
+                  <button type="button" class="btn-chip chip-gold" id="preset-counsel">
+                    Counsel (62% - Web)
                   </button>
-                  <button type="button" class="btn-chip chip-fail" id="preset-ineligible">
-                    Fill Below Cutoff (54%)
+                  <button type="button" class="btn-chip chip-fail" id="preset-counsellor">
+                    Low (44% - Design)
                   </button>
                 </div>
               </div>
             </div>
 
             <form id="admission-form" novalidate>
-              <!-- Step 1: Student Personal Details -->
+              <!-- Step 1: Personal Details -->
               <fieldset class="form-section">
                 <legend class="form-section-title">
-                  <span class="step-num">1</span> Applicant Personal &amp; Contact Details
+                  <span class="step-num">1</span> Applicant Personal Information
                 </legend>
 
                 <div class="input-grid-2">
                   <div class="form-group">
-                    <label for="applicant-name">Full Name (as per 10+2 Marksheet) <span class="req">*</span></label>
+                    <label for="applicant-name">Full Name <span class="req">*</span></label>
                     <input type="text" id="applicant-name" name="applicantName" required minlength="3" autocomplete="name" enterkeyhint="next" placeholder="e.g. Hamza Tariq" />
-                    <span class="field-error">Please enter the student's full legal name.</span>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="applicant-dob">Date of Birth <span class="req">*</span></label>
-                    <input type="date" id="applicant-dob" name="applicantDob" required value="2008-05-14" autocomplete="bday" enterkeyhint="next" />
-                    <span class="field-error">Please provide a valid date of birth.</span>
+                    <span class="field-error" id="err-name">Full Name is required (minimum 3 letters).</span>
                   </div>
 
                   <div class="form-group">
                     <label for="applicant-email">Email Address <span class="req">*</span></label>
                     <input type="email" id="applicant-email" name="applicantEmail" required autocomplete="email" inputmode="email" enterkeyhint="next" placeholder="student@example.com" />
-                    <span class="field-error">Please enter a valid email address for admission updates.</span>
+                    <span class="field-error" id="err-email">Please enter a valid email address.</span>
                   </div>
 
                   <div class="form-group">
-                    <label for="applicant-phone">Mobile Number <span class="req">*</span></label>
+                    <label for="applicant-phone">Mobile / WhatsApp Number <span class="req">*</span></label>
                     <input type="tel" id="applicant-phone" name="applicantPhone" required pattern="[0-9+\-\s()]{10,15}" autocomplete="tel" inputmode="tel" enterkeyhint="next" placeholder="+92 300 1234567" />
-                    <span class="field-error">Please enter a valid phone number.</span>
+                    <span class="field-error" id="err-phone">Please enter a valid phone number (10-15 digits).</span>
                   </div>
 
                   <div class="form-group">
-                    <label for="applicant-gender">Gender <span class="req">*</span></label>
-                    <select id="applicant-gender" name="applicantGender" required>
-                      <option value="">Select Gender</option>
-                      <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      <option value="Non-Binary">Non-Binary</option>
-                      <option value="Prefer not to say">Prefer not to say</option>
-                    </select>
+                    <label for="applicant-city">City / Address <span class="req">*</span></label>
+                    <input type="text" id="applicant-city" name="applicantCity" required placeholder="e.g. Multan, Punjab" value="Multan" />
+                    <span class="field-error" id="err-city">City is required.</span>
                   </div>
-
-                  <div class="form-group">
-                    <label for="guardian-name">Parent / Guardian Name <span class="req">*</span></label>
-                    <input type="text" id="guardian-name" name="guardianName" required autocomplete="name" enterkeyhint="next" placeholder="e.g. Tariq Mahmood" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="applicant-address">City &amp; Permanent Residential Address <span class="req">*</span></label>
-                  <input type="text" id="applicant-address" name="applicantAddress" required autocomplete="street-address" enterkeyhint="next" placeholder="House/Flat No., Street, City, Multan" />
                 </div>
               </fieldset>
 
-              <!-- Step 2: Qualifying Examination Marks & 60% Eligibility Gate -->
+              <!-- Step 2: Academic Marks & Eligibility Status -->
               <fieldset class="form-section highlight-section">
                 <legend class="form-section-title">
-                  <span class="step-num">2</span> 12th Standard Marks &amp; Eligibility Verification (Min. 60%)
-                </legend>
-
-                <div class="input-grid-3">
-                  <div class="form-group">
-                    <label for="exam-board">Qualifying Board / Council <span class="req">*</span></label>
-                    <select id="exam-board" name="examBoard" required>
-                      <option value="BISE Multan">BISE Multan</option>
-                      <option value="BISE Lahore / Punjab Boards">BISE Lahore / Other Punjab Boards</option>
-                      <option value="FBISE Islamabad">FBISE (Federal Board)</option>
-                      <option value="IB / Cambridge A-Levels">IB / Cambridge A-Levels</option>
-                      <option value="Other">Other Recognized Board</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="passing-year">Year of Passing <span class="req">*</span></label>
-                    <select id="passing-year" name="passingYear" required>
-                      <option value="2026">2026</option>
-                      <option value="2025">2025</option>
-                      <option value="2024">2024</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="roll-number">Board Roll / Registration No. <span class="req">*</span></label>
-                    <input type="text" id="roll-number" name="rollNumber" required enterkeyhint="next" placeholder="e.g. BISEM26-49182" />
-                  </div>
-                </div>
-
-                <!-- Entry Mode Switcher: Aggregate vs Subject-wise -->
-                <div class="marks-mode-bar">
-                  <span class="marks-mode-label">Marks Entry Method:</span>
-                  <div class="segmented-control" role="radiogroup" aria-label="Marks Entry Method">
-                    <label class="segment-option">
-                      <input type="radio" name="marksMode" value="aggregate" checked />
-                      <span>Total Aggregate Marks</span>
-                    </label>
-                    <label class="segment-option">
-                      <input type="radio" name="marksMode" value="subjects" />
-                      <span>5-Subject Breakdown (Out of 100 each)</span>
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Mode A: Total Aggregate Marks -->
-                <div id="mode-aggregate-panel" class="marks-input-panel">
-                  <div class="input-grid-3">
-                    <div class="form-group">
-                      <label for="marks-obtained">Total Marks Obtained <span class="req">*</span></label>
-                      <input type="number" id="marks-obtained" min="0" max="1000" step="0.5" value="390" inputmode="decimal" enterkeyhint="next" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="marks-max">Maximum Possible Marks <span class="req">*</span></label>
-                      <input type="number" id="marks-max" min="100" max="1000" step="1" value="500" inputmode="numeric" enterkeyhint="next" required />
-                    </div>
-                    <div class="form-group">
-                      <label for="calculated-percentage">Calculated Percentage (%)</label>
-                      <input type="text" id="calculated-percentage" value="78.00%" readonly class="readonly-highlight" tabindex="-1" />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Mode B: 5-Subject Breakdown -->
-                <div id="mode-subjects-panel" class="marks-input-panel hidden">
-                  <p class="helper-note">Enter marks obtained out of 100 for your top 5 subjects:</p>
-                  <div class="subjects-grid">
-                    <div class="form-group">
-                      <label for="sub-1">English / Core Language</label>
-                      <input type="number" id="sub-1" class="subject-input" min="0" max="100" value="80" inputmode="numeric" />
-                    </div>
-                    <div class="form-group">
-                      <label for="sub-2">Major Subject 1 (e.g. Math/Bio/Acct)</label>
-                      <input type="number" id="sub-2" class="subject-input" min="0" max="100" value="78" inputmode="numeric" />
-                    </div>
-                    <div class="form-group">
-                      <label for="sub-3">Major Subject 2 (e.g. Physics/Econ)</label>
-                      <input type="number" id="sub-3" class="subject-input" min="0" max="100" value="76" inputmode="numeric" />
-                    </div>
-                    <div class="form-group">
-                      <label for="sub-4">Major Subject 3 (e.g. Chem/Bus.St)</label>
-                      <input type="number" id="sub-4" class="subject-input" min="0" max="100" value="79" inputmode="numeric" />
-                    </div>
-                    <div class="form-group">
-                      <label for="sub-5">Elective / 5th Subject</label>
-                      <input type="number" id="sub-5" class="subject-input" min="0" max="100" value="77" inputmode="numeric" />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Live Eligibility Banner inside Form -->
-                <div id="form-eligibility-banner" class="live-eligibility-gate gate-pass" aria-live="polite">
-                  <div class="gate-top">
-                    <div class="gate-status-left">
-                      <span id="gate-badge" class="gate-pill pill-pass">ELIGIBLE (&ge; 60%)</span>
-                      <h4 id="gate-heading">Marks Criteria Met: 78.00% Aggregate</h4>
-                    </div>
-                    <div class="gate-scholarship-tag" id="gate-scholarship">
-                      25% Distinction Merit Scholarship Unlocked
-                    </div>
-                  </div>
-                  <div class="gate-progress-bar">
-                    <div id="gate-progress-fill" class="gate-fill" style="width: 78%;"></div>
-                    <div class="gate-cutoff-pin" style="left: 60%;">
-                      <span>60% Cutoff</span>
-                    </div>
-                  </div>
-                  <p id="gate-message">
-                    Your score of <strong>390 / 500 (78.00%)</strong> satisfies the mandatory 60.0% minimum passing criteria. You may proceed to submit your application.
-                  </p>
-                </div>
-              </fieldset>
-
-              <!-- Step 3: Program & Specialization Selection -->
-              <fieldset class="form-section">
-                <legend class="form-section-title">
-                  <span class="step-num">3</span> Undergraduate Program &amp; Campus Preferences
+                  <span class="step-num">2</span> Academic Marks &amp; Eligibility Evaluation
                 </legend>
 
                 <div class="input-grid-2">
                   <div class="form-group">
-                    <label for="program-select">Select Degree Program <span class="req">*</span></label>
-                    <select id="program-select" name="program" required>
-                      <option value="B.Tech">B.Tech — Bachelor of Technology (4 Years)</option>
-                      <option value="B.Sc">B.Sc — Bachelor of Science Honors (3 Years)</option>
-                      <option value="B.Com">B.Com — Bachelor of Commerce (3 Years)</option>
-                      <option value="B.A">B.A — Bachelor of Arts Honors (3 Years)</option>
-                    </select>
+                    <label for="form-marks">Previous Exam Marks / Percentage (%) <span class="req">*</span></label>
+                    <input type="number" id="form-marks" name="formMarks" min="0" max="100" step="0.5" value="78" required inputmode="decimal" />
+                    <span class="field-error" id="err-marks">Marks must be between 0 and 100%.</span>
                   </div>
 
                   <div class="form-group">
-                    <label for="specialization-select">Preferred Major / Specialization <span class="req">*</span></label>
-                    <select id="specialization-select" name="specialization" required>
-                      <!-- Populated dynamically by JS -->
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="hostel-preference">Accommodation / Campus Facility</label>
-                    <select id="hostel-preference" name="hostelPreference">
-                      <option value="Day Scholar (No Hostel)">Day Scholar (Own Arrangement)</option>
-                      <option value="On-Campus Hostel Required">On-Campus AC/Non-AC Hostel Required</option>
-                      <option value="College Bus Transport">Day Scholar + College Bus Transport</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="admission-category">Admission Quota / Category</label>
-                    <select id="admission-category" name="admissionCategory">
-                      <option value="General Merit">General Merit</option>
-                      <option value="Sports / Extracurricular Excellence">Sports / Cultural Excellence</option>
-                      <option value="Defense / Ex-Servicemen Ward">Defense / Ex-Servicemen Ward</option>
-                      <option value="First-Generation Learner">First-Generation College Learner</option>
+                    <label for="form-board">Education Level / Board</label>
+                    <select id="form-board" name="formBoard">
+                      <option value="BISE Multan (HSSC/Matric)">BISE Multan (HSSC/Matric)</option>
+                      <option value="FBISE Islamabad">FBISE Islamabad</option>
+                      <option value="Other Board / University">Other Recognized Board / University</option>
                     </select>
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="applicant-sop">Academic Achievements / Statement of Purpose (Optional)</label>
-                  <textarea id="applicant-sop" name="applicantSop" rows="2" placeholder="Briefly mention Olympiads, sports, coding projects, or why you wish to join this program..."></textarea>
+                <!-- Live Eligibility Gate Banner inside Form -->
+                <div id="form-eligibility-gate" class="live-eligibility-gate gate-pass" aria-live="polite">
+                  <div class="gate-top">
+                    <div class="gate-status-left">
+                      <span id="form-gate-badge" class="gate-pill pill-pass">DIRECT ADMISSION</span>
+                      <h4 id="form-gate-heading">Marks: 78.0% &rarr; Direct Admission Approved</h4>
+                    </div>
+                  </div>
+                  <p id="form-gate-message">
+                    Your marks qualify for direct enrollment. Complete your course selection below.
+                  </p>
+                </div>
+              </fieldset>
+
+              <!-- Step 3: Course Selection & Fee Option -->
+              <fieldset class="form-section">
+                <legend class="form-section-title">
+                  <span class="step-num">3</span> Course &amp; Duration Selection
+                </legend>
+
+                <div class="input-grid-2">
+                  <div class="form-group">
+                    <label for="form-course-select">Choose Course <span class="req">*</span></label>
+                    <select id="form-course-select" name="formCourse" required>
+                      <option value="Web Development">Web Development (Rs. 5,000/mo)</option>
+                      <option value="Graphic Design">Graphic Design (Rs. 4,000/mo)</option>
+                      <option value="AI Course">AI Course (Rs. 7,000/mo)</option>
+                      <option value="Freelancing">Freelancing (Rs. 3,500/mo)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-duration-select">Course Duration <span class="req">*</span></label>
+                    <select id="form-duration-select" name="formDuration" required>
+                      <option value="1">1 Month (0% Discount)</option>
+                      <option value="3" selected>3 Months (5% Discount)</option>
+                      <option value="6">6 Months (10% Discount)</option>
+                      <option value="12">12 Months (10% Discount)</option>
+                    </select>
+                  </div>
                 </div>
 
                 <label class="checkbox-row">
                   <input type="checkbox" id="declaration-check" required checked />
-                  <span>I hereby declare that the marks entered above are true and match my official 10+2 marksheet, and I understand that a minimum of <strong>60.0% aggregate marks</strong> is mandatory for admission.</span>
+                  <span>I confirm that the information provided is accurate and agree to Govt College of Multan admission guidelines.</span>
                 </label>
               </fieldset>
 
               <div class="form-submit-footer">
-                <div id="submit-lock-notice" class="submit-lock-notice hidden">
-                  <strong>Submission Locked:</strong> Aggregate marks are below the mandatory <strong>60.0% eligibility cutoff</strong>.
-                </div>
                 <div class="submit-buttons">
-                  <button type="reset" id="reset-form-btn" class="btn btn-outline">Reset Form</button>
+                  <button type="reset" id="reset-form-btn" class="btn btn-outline">Reset</button>
                   <button type="submit" id="submit-application-btn" class="btn btn-primary btn-lg">
                     Submit Admission Application
                   </button>
@@ -682,54 +720,54 @@
             </form>
           </div>
 
-          <!-- Sticky Summary Sidebar next to Form -->
+          <!-- Live Sidebar Summary -->
           <aside class="form-sidebar">
             <div class="summary-card">
               <h3>Live Application Summary</h3>
-              <p class="summary-sub">Real-time preview of your admission profile:</p>
+              <p class="summary-sub">Real-time enrollment calculation:</p>
 
               <dl class="summary-list">
                 <div class="summary-row">
-                  <dt>Candidate</dt>
-                  <dd id="sum-name">Not entered yet</dd>
+                  <dt>Student</dt>
+                  <dd id="sum-name">Hamza Tariq</dd>
                 </div>
                 <div class="summary-row">
-                  <dt>Selected Degree</dt>
-                  <dd id="sum-program">B.Tech</dd>
+                  <dt>Marks</dt>
+                  <dd id="sum-marks">78.0%</dd>
                 </div>
                 <div class="summary-row">
-                  <dt>Specialization</dt>
-                  <dd id="sum-spec">Computer Science &amp; Engg</dd>
+                  <dt>Eligibility</dt>
+                  <dd id="sum-eligibility"><span class="badge-mini pass">Direct Admission</span></dd>
                 </div>
                 <div class="summary-row">
-                  <dt>10+2 Score</dt>
-                  <dd id="sum-marks">390 / 500 (78.00%)</dd>
+                  <dt>Course</dt>
+                  <dd id="sum-course">Web Development</dd>
                 </div>
                 <div class="summary-row">
-                  <dt>60% Cutoff Status</dt>
-                  <dd id="sum-eligibility"><span class="badge-mini pass">Eligible</span></dd>
+                  <dt>Duration</dt>
+                  <dd id="sum-duration">3 Months</dd>
                 </div>
                 <div class="summary-row">
-                  <dt>Base Annual Fee</dt>
-                  <dd id="sum-base-fee">$2,400 / yr</dd>
+                  <dt>Original Fee</dt>
+                  <dd id="sum-original-fee">Rs. 15,000</dd>
                 </div>
                 <div class="summary-row">
-                  <dt>Merit Scholarship</dt>
-                  <dd id="sum-discount" class="text-success">- $600 (25% Off)</dd>
+                  <dt>Discount</dt>
+                  <dd id="sum-discount" class="text-success">- Rs. 750 (5%)</dd>
                 </div>
                 <div class="summary-row total-row">
-                  <dt>Net Annual Tuition</dt>
-                  <dd id="sum-net-fee">$1,800 / yr</dd>
+                  <dt>Final Fee</dt>
+                  <dd id="sum-final-fee">Rs. 14,250</dd>
                 </div>
               </dl>
 
               <div class="sidebar-checklist">
-                <h4>Required Documents at Counseling</h4>
+                <h4>Admission Benefits</h4>
                 <ul>
-                  <li>10th &amp; 12th Original Marksheets</li>
-                  <li>Transfer &amp; Migration Certificate</li>
-                  <li>Government Photo ID Proof</li>
-                  <li>2 Passport Size Photographs</li>
+                  <li>Govt Verified Completion Certificate</li>
+                  <li>Hands-on Lab Projects &amp; Portfolio</li>
+                  <li>Freelancing Mentorship</li>
+                  <li>Job Placement Assistance</li>
                 </ul>
               </div>
             </div>
@@ -738,43 +776,104 @@
       </div>
     </section>
 
-    <!-- Submitted Applications Tracker Section -->
+    <!-- EXTRA FEATURE: Interactive FAQ Accordion -->
+    <section id="faq-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Help &amp; Support</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Find quick answers regarding eligibility, course fees, and duration discounts.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What is the eligibility criteria for Direct Admission?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Students scoring <strong>70% and above</strong> in their previous academic examinations qualify for <strong>Direct Admission</strong> without any mandatory entrance test or counseling session.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What happens if my marks are between 50% and 69%?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Students scoring between <strong>50% and 69%</strong> are eligible for admission with <strong>counselling recommended</strong> to help choose the best-suited course track according to their background.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How are duration discounts calculated?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>When you enroll for a <strong>3-month package</strong>, you receive an automatic <strong>5% discount</strong>. When enrolling for <strong>6 or more months</strong>, you receive a <strong>10% discount</strong> on the total course fee.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can I get counsellor support if my marks are below 50%?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes! Students scoring below 50% can connect directly with our academic advisor via the WhatsApp button or admissions desk for personalized foundation training.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA FEATURE: Local Storage Applications Directory -->
     <section id="applications-section" class="section section-alt">
       <div class="container">
         <div class="section-header-flex">
           <div>
-            <span class="section-tag">Admissions Registry</span>
-            <h2>Submitted Applications Directory</h2>
-            <p>Applications submitted during this session (and saved in your browser) appear here with their verified percentage and merit tier.</p>
+            <span class="section-tag">Saved Records</span>
+            <h2>Submitted Applications Directory (Local Storage)</h2>
+            <p>Applications submitted during this session are safely preserved in browser Local Storage.</p>
           </div>
-          <button type="button" id="clear-apps-btn" class="btn btn-outline btn-sm">Clear Saved Records</button>
+          <button type="button" id="clear-apps-btn" class="btn btn-outline btn-sm">Clear Records</button>
         </div>
 
         <div id="applications-list" class="applications-grid">
-          <!-- Dynamically populated by JS -->
+          <!-- Populated dynamically by JS -->
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Native HTML5 Dialog for Official Admission Receipt -->
+  <!-- EXTRA FEATURE: Floating WhatsApp Contact Button -->
+  <a href="https://wa.me/923001234567?text=Hello%20Govt%20College%20of%20Multan%20Admissions%20Office,%20I%20would%20like%20to%20inquire%20about%20course%20admissions." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" title="Chat with Admissions on WhatsApp" aria-label="WhatsApp Admissions Support">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.1 7.3C8.94 7.3 8.68 7.36 8.46 7.6C8.24 7.84 7.62 8.42 7.62 9.6C7.62 10.78 8.48 11.91 8.6 12.07C8.72 12.23 10.28 14.64 12.68 15.67C13.25 15.92 13.7 16.07 14.04 16.18C14.62 16.36 15.14 16.34 15.56 16.27C16.03 16.2 16.99 15.69 17.19 15.12C17.39 14.56 17.39 14.08 17.33 13.98C17.27 13.88 17.11 13.82 16.87 13.7C16.63 13.58 15.46 13 15.24 12.92C15.02 12.84 14.86 12.8 14.7 13.04C14.54 13.28 14.08 13.82 13.94 13.98C13.8 14.14 13.66 14.16 13.42 14.04C13.18 13.92 12.41 13.67 11.49 12.85C10.77 12.21 10.29 11.42 10.15 11.18C10.01 10.94 10.13 10.81 10.25 10.69C10.36 10.58 10.5 10.4 10.62 10.26C10.74 10.12 10.78 10.02 10.86 9.86C10.94 9.7 10.9 9.56 10.84 9.44C10.78 9.32 10.32 8.19 10.12 7.72C9.93 7.25 9.73 7.31 9.58 7.3L9.1 7.3Z"/>
+    </svg>
+    <span class="whatsapp-label">WhatsApp Help</span>
+  </a>
+
+  <!-- EXTRA FEATURE: Printable Official Admission Receipt Dialog Modal -->
   <dialog id="receipt-dialog" class="receipt-modal">
     <div class="receipt-content">
       <div class="receipt-header">
         <div class="receipt-brand">
           <strong>GOVT COLLEGE OF MULTAN</strong>
-          <span>Official Provisional Admission Application Receipt • Academic Session 2026–27</span>
+          <span>Official Provisional Admission &amp; Fee Voucher • Academic Year 2026–27</span>
         </div>
-        <span class="receipt-status-stamp">ELIGIBILITY VERIFIED (&ge; 60%)</span>
+        <span class="receipt-status-stamp" id="receipt-stamp">ELIGIBLE</span>
       </div>
 
       <div id="receipt-body" class="receipt-body">
-        <!-- Populated dynamically when an application is submitted or viewed -->
+        <!-- Populated dynamically -->
       </div>
 
       <div class="receipt-footer no-print">
         <button type="button" id="print-receipt-btn" class="btn btn-outline">
-          Print / Save as PDF
+          🖨️ Print / Save as PDF
         </button>
         <button type="button" id="close-receipt-btn" class="btn btn-primary">
           Done &amp; Close
